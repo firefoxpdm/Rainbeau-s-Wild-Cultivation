@@ -1,0 +1,87 @@
+﻿<Patch>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants/Plant_HealrootWild</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName = "TropicalRainforest"]/wildPlants</xpath>
+		<value>
+			<Plant_HealrootWild>0.01</Plant_HealrootWild>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants/Plant_HealrootWild</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/BiomeDef[defName = "TropicalSwamp"]/wildPlants</xpath>
+		<value>
+			<Plant_HealrootWild>0.01</Plant_HealrootWild>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName = "Plant_Agave"]/plant/growDays</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName = "Plant_Agave"]/plant/harvestYield</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/ThingDef[defName = "Plant_Agave"]/plant/harvestWork</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName = "Plant_Agave"]/plant/sowMinSkill</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName = "Plant_Agave"]/plant/sowWork</xpath>
+	</Operation>
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName = "Plant_Agave"]/plant/sowTags</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "Plant_Agave"]/plant</xpath>
+		<value>
+			<growDays>9</growDays>
+			<harvestYield>7</harvestYield>
+			<harvestWork>375</harvestWork>
+			<sowMinSkill>6</sowMinSkill>
+			<sowWork>340</sowWork>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName = "Plant_Grass"]/plant/sowTags</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "Plant_Grass"]/plant</xpath>
+		<value>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags> 
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationRemove">
+		<success>Always</success>
+		<xpath>Defs/ThingDef[defName = "Plant_TallGrass"]/plant/sowTags</xpath>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "Plant_TallGrass"]/plant</xpath>
+		<value>
+			<sowTags>
+				<li>Ground</li>
+			</sowTags> 
+		</value>
+	</Operation>
+	
+</Patch>
